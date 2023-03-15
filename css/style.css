@@ -1,0 +1,114 @@
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  :root {
+    --very-dark-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --soft-violet: hsl(273, 75%, 66%);
+    --light--grayish-blue: hsl(240, 5%, 91%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --soft-blue: hsl(240, 73%, 65%);
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    width: 100vh;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: "Kumbh Sans";
+    background: linear-gradient(to bottom, var(--soft-violet),var(--soft-blue));
+    background-repeat:no-repeat;
+
+    
+  }
+
+  main{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5%;
+    max-height: 70%;
+    min-width: 65%;
+  }
+
+  .accordion{
+    min-width: 50%;
+    height: auto;
+    font-weight: 700;
+    padding: 5%;
+  }
+
+  .accordion h1 {
+    letter-spacing:.2rem;
+    font-size: 3.5rem;
+  }
+
+  .accordion-item{
+    color: var(--very-dark-grayish-blue);
+    background-color: white;
+    border: unset !important ;
+    border-bottom: .1rem solid var(--dark-grayish-blue)  !important;
+  }
+
+  .accordion-item :focus{
+    box-shadow: none !important;
+  }
+
+  .accordion button{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--very-dark-grayish-blue);
+  }
+
+  .accordion h2 :focus{
+    color: black;
+    background-color: white;
+  }
+
+  .accordion h2 :hover{
+    color: var(--soft-red);
+  }
+
+  .accordion-body {
+    font-size: 1.2rem;
+    color: var(--dark-grayish-blue);
+  }
+
+  .picture{
+    min-width: 50%;
+    min-height: 100vh;
+    background: url("../images/bg-pattern-desktop.svg"),
+    url("../images/illustration-woman-online-desktop.svg");
+  background-size: 800px, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: -430px, -72px;
+  background-position-y: -230px, 50px;
+  background-blend-mode:lighten;
+  }
+
+  .box-img{
+    width: 25vh;
+    transform: translate(-50%,115%);
+  }
+
+footer{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
